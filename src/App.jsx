@@ -152,7 +152,10 @@ Return ONLY a valid JSON object in exactly this format (no markdown, no extra te
     }
   );
 
-  if (!res.ok) throw new Error(`Gemini API error: ${res.status} — check your API key`);
+  if (!res.ok) {
+    const errBody = await res.json();
+    throw new Error(`Gemini ${res.status}: ${JSON.stringify(errBody)}`);
+  }
 
   const data = await res.json();
   let raw = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
