@@ -2,9 +2,9 @@ import { useState, useRef } from "react";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 // ── Config — replace with your real values ───────────────────
-const SUPABASE_URL  = "https://your-project-id.supabase.co";
-const SUPABASE_ANON = "your-anon-key-here";
-const GEMINI_KEY    = "your-gemini-api-key-here";
+const SUPABASE_URL  = "https://xrxrrimuxjufpaguejfi.supabase.co/rest/v1/";
+const SUPABASE_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhyeHJyaW11eGp1ZnBhZ3VlamZpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg5ODUyMjUsImV4cCI6MjA5NDU2MTIyNX0.sxZ19RlxpVstZrDGCP-0AYlIXdpyp4nCr7VQ87Eq8Y8";
+const GEMINI_KEY    = "AIzaSyBPs9Idz5KAFhogLMgw3MrC1-obDgiQuqI";
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON);
 
