@@ -3,7 +3,7 @@ import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 // ── Supabase config ──────────────────────────────────────────
 // Replace these with your actual Supabase project values
-const SUPABASE_URL  = "https://xrxrrimuxjufpaguejfi.supabase.co/rest/v1/";
+const SUPABASE_URL  = "https://xrxrrimuxjufpaguejfi.supabase.co";
 const SUPABASE_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhyeHJyaW11eGp1ZnBhZ3VlamZpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg5ODUyMjUsImV4cCI6MjA5NDU2MTIyNX0.sxZ19RlxpVstZrDGCP-0AYlIXdpyp4nCr7VQ87Eq8Y8";
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON);
 
